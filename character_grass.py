@@ -9,7 +9,7 @@ character = load_image('character.png')
 x=400
 y=90
 move_ment = 0
-setea = 270
+setea = 135
 while (True):
  clear_canvas_now()
  grass.draw_now(400, 30)
@@ -33,13 +33,13 @@ while (True):
  if move_ment == 1:
      setea = setea - 5
      if setea == 0:
-         setea = 360
+         setea = 180
      x = 210 * math.cos(setea * 2 * math.pi / 180) + 400
      y = 210 * math.sin(setea * 2 * math.pi / 180) + 300
-     if setea == 270:
+     if setea == 135:
          move_ment = 0
              
- #delay(0.01)
+ delay(0.01)
 
 close_canvas()
 
