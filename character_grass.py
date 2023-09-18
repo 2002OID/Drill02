@@ -1,4 +1,5 @@
 from pico2d import *
+import math
 
 open_canvas()
 
@@ -26,11 +27,14 @@ while (True):
   if x == 0:
       if y > 90:
          y = y - 2
-  if x == 400:
-      if y == 90:
-          move_ment = 1
- if move_ment == 1:
-     
-delay(0.01)
+  #if x == 400:
+      #if y == 90:
+          #move_ment = 1
+ #if move_ment == 1:
+     #if x >= 400:
+         #if y <= 300:
+            # x + 2
+            # y = x * math.sin() + 300
+ delay(0.01)
 
 close_canvas()
